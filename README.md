@@ -75,25 +75,6 @@ Here's an example of what the raw JSON data will look like:
 ``` json
 ...
 {
-  "name": "themeblvd_slider_auto_args",
-  "summary": "Filters the query arguments passed to WP_Query for a post slider.",
-  "desc": "This filter exists for backwards compatibility only and is now deprecated. Use `themeblvd_posts_args` filter instead.",
-  "since": "2.0.0",
-  "params": [
-    {
-      "name": "$query_args",
-      "type": "array",
-      "description": "Query arguments passed to WP_Query."
-    },
-    {
-      "name": "$args",
-      "type": "array",
-      "description": "Original arguments for post slider; see docs for themeblvd_get_post_slider()."
-    }
-  ],
-  "file": "framework/blocks/loop.php"
-},
-{
   "name": "themeblvd_icon_browser_value",
   "summary": "Filters the value to be inserted for an icon in the icon browser.",
   "desc": "By default, this value will be structured with a Font Awesome style class and icon class, like `fas fa-user`.",
