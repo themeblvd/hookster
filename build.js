@@ -10,7 +10,9 @@ const hooks = {
     filters: []
 }
 
-const docBlockInstance = new docblock();
+const docBlockInstance = new docblock({
+    skipMarkdown: true
+});
 
 const files = glob.readdirSync( 'src/**/*.php' );
 
