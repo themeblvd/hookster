@@ -65,7 +65,7 @@ The data generated within your `actions.json` and `filters.json` files will incl
 * `summary`: *{String}* First paragraph of the docBlock.
 * `desc`: *{String}* Remaining paragraphs of the description, after the summary. Paragraphs are separated with `\n\n`.
 * `since`: *{String}* Version number the hook was added to your theme or plugin, pulled from the `@since` tag of the docBlock.
-* `params`: *{Object}* Information about parameters passed to the hook.
+* `params`: *{Array}* Parameters passed to the hook.
 * `file`: *{String}* File in your plugin or theme, where the hook exists.
 
 Here's an example of what the raw JSON data will look like:
