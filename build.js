@@ -58,12 +58,8 @@ function addItem( file, itemData ) {
         item.file = file.replace( 'src/', '' );
 
         /*
-         * Check for validity and add hook.
-         *
-         * If the name is FALSE, it means it's not a hook prefixed
-         * with our project's namespace.
-         *
-         * And if the desc is false, it means it's a duplicate hook.
+         * Check for validity and add hook. A hook must have
+         * at least a name and a summary.
          */
         if ( item.name && item.summary ) {
             hooks[ type ].push( item );
