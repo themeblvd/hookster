@@ -20,7 +20,7 @@ Next, let's talk about how the code in your WordPress theme or plugin needs to b
 
 Hookster works by going through the [DocBlocks](http://docs.phpdoc.org/guides/docblocks.html) found across your theme or plugin's PHP files. The name of your hook is cleverly extracted from the PHP code immediately following each docBlock, and then information about the hook is taken from the docBlock, itself.
 
-So in order for the data to be generated properly, your PHP code needs to follow (WordPress's PHP Documentation Standards)[https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/#4-hooks-actions-and-filters].
+So in order for the data to be generated properly, your PHP code needs to follow [WordPress's PHP Documentation Standards](https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/#4-hooks-actions-and-filters).
 
 For example:
 
