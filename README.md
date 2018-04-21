@@ -106,6 +106,26 @@ Here's an example of what the raw JSON data will look like:
 ...
 ```
 
+The above data was generated from this PHP code:
+
+``` php
+/**
+ * Filters the value to be inserted for an icon in the
+ * icon browser.
+ *
+ * By default, this value will be structured with a Font
+ * Awesome style class and icon class, like `fas fa-user`.
+ *
+ * @since 2.7.4
+ *
+ * @param string $icon_value Icon value.
+ * @param string $icon       Icon name.
+ * @param string $prefix     Style class, like `fas`.
+ * @param string $type       Style type, like `solid`.
+ */
+$icon_value = apply_filters( 'themeblvd_icon_browser_value', $icon_value, $icon, $prefix, $type );
+```
+
 ## Creator
 
 **Jason Bobich**
