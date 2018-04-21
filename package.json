@@ -1,0 +1,18 @@
+{
+  "name": "hookster",
+  "version": "1.0.0",
+  "description": "Generates .json file mapping out all of the actions and filters for a WordPress theme or plugin.",
+  "namespace": "themeblvd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themeblvd/hookster.git"
+  },
+  "devDependencies": {
+    "docblock": "^0.3.5",
+    "glob-fs": "^0.1.7",
+    "read-file": "^0.2.0"
+  },
+  "scripts": {
+    "build": "node build.js"
+  }
+}
