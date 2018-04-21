@@ -67,12 +67,13 @@ The data generated within your `actions.json` and `filters.json` files will incl
 * `summary`: *{String}* First paragraph of the docBlock.
 * `desc`: *{String}* Remaining paragraphs of the description, after the summary. Paragraphs are separated with `\n\n`.
 * `since`: *{String}* Version number the hook was added to your theme or plugin, pulled from the `@since` tag of the docBlock.
-* `params`: *{Object}* Information about parameters passed to the hook. Unfortunately, Array descriptions and info aren't currently supported.
+* `params`: *{Object}* Information about parameters passed to the hook.
 * `file`: *{String}* File in your plugin or theme, where the hook exists.
 
 Here's an example of what the raw JSON data will look like:
 
 ``` json
+...
 {
   "name": "themeblvd_slider_auto_args",
   "summary": "Filters the query arguments passed to WP_Query for a post slider.",
@@ -93,19 +94,35 @@ Here's an example of what the raw JSON data will look like:
   "file": "framework/blocks/loop.php"
 },
 {
-  "name": "themeblvd_post_thumbnail_fallback_size",
-  "summary": "Filters the fallback image size for featured images, when none is set.",
-  "desc": "Ideally, if no image size was set, we default to `tb_x_large`, and establish that as the biggest a featured image can be.\n\nThis is an attempt to avoid ever pulling `full` in case the user uploaded a ridiculously large image.",
-  "since": "2.7.0",
+  "name": "themeblvd_icon_browser_value",
+  "summary": "Filters the value to be inserted for an icon in the icon browser.",
+  "desc": "By default, this value will be structured with a Font Awesome style class and icon class, like `fas fa-user`.",
+  "since": "2.7.4",
   "params": [
     {
-      "name": "$crop",
+      "name": "$icon_value",
       "type": "string",
-      "description": "Image crop size."
+      "description": "Icon value."
+    },
+    {
+      "name": "$icon",
+      "type": "string",
+      "description": "Icon name."
+    },
+    {
+      "name": "$prefix",
+      "type": "string",
+      "description": "Style class, like <code>fas</code>."
+    },
+    {
+      "name": "$type",
+      "type": "string",
+      "description": "Style type, like <code>solid</code>."
     }
   ],
-  "file": "framework/blocks/media.php"
+  "file": "framework/admin/functions/display.php"
 },
+...
 ```
 
 ## Creator
