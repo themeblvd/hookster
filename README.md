@@ -50,12 +50,12 @@ do_action( 'my_plugin_do_something', $foo, $bar );
 apply_filters( 'my_plugin_modify_something', $foo, $bar );
 ```
 
-*Note: Make sure all of your action and filter names are prefixed with your namespace, like `<namespace>_<hook name>`. In the above examples, the namespace would be `my_plugin`.*
+*Note: Make sure all of your action and filter names are prefixed with your namespace. In the above examples, the namespace would be `my_plugin`.*
 
 ## Usage Instructions
 
 1. Clone this repository to your local computer, navigate to the project in your terminal, and run `npm install` to install the required Node packages.
-2. Open the project's `package.json`, find the namespace parameter, and change it to your theme or plugin's namespace. The namespace should be what you prefix all of your action and filter names with. Examples: `themename`, `pluginname`, `theme_name`, `plugin_name`, etc.
+2. Open the project's `package.json`, find the `namespace` parameter, and change it to your theme or plugin's namespace. The namespace should be what you prefix all of your action and filter names with. Examples: `themename`, `pluginname`, `theme_name`, `plugin_name`, etc. **Only hook names prefixed with your namespace name will be found.**
 3. Drop all of the files of your theme or plugin into the project's `src` directory.
 4. Run the command `npm run build` in your terminal. After it's finished, you'll be able to find the files `actions.json` and `filters.json` in your project's `dist` directory.
 
