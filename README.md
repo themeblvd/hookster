@@ -93,12 +93,12 @@ Here's an example of what the raw JSON data will look like:
     {
       "name": "$prefix",
       "type": "string",
-      "description": "Style class, like <code>fas</code>."
+      "description": "Style class, like `fas`."
     },
     {
       "name": "$type",
       "type": "string",
-      "description": "Style type, like <code>solid</code>."
+      "description": "Style type, like `solid`."
     }
   ],
   "file": "framework/admin/functions/display.php"
